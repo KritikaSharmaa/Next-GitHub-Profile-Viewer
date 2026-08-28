@@ -1,9 +1,7 @@
 # GitHub Profile Viewer — Next.js + TypeScript
 
 Search any GitHub username, view their profile and public repos, click into
-a repo for details. Built to teach concepts your todo app didn't need:
-Server Components fetching real data, nested dynamic routes, `loading.tsx`,
-`error.tsx`, and `notFound()`.
+a repo for details.
 
 ## Getting it running
 
@@ -110,19 +108,6 @@ full page reload) between routes. `SearchForm.tsx` uses `useRouter()`
 for *programmatic* navigation (redirecting after a form submit), which is
 the hook-based equivalent for cases where you're not clicking a literal
 link.
-
-## What's deliberately left out (good next exercises)
-
-- **Search-as-you-type** with debouncing, instead of submit-to-navigate
-- **Pagination** for repos (GitHub's API supports `page=` — currently
-  hardcoded to the first 12, sorted by most recently updated)
-- **`generateMetadata`** — dynamic `<title>`/OG tags per profile/repo page
-  (right now the `<title>` is static, set once in `layout.tsx`)
-- **Authenticated GitHub API requests** (a personal access token) to raise
-  the rate limit and unlock more data (private repos, more detailed stats)
-- **A `route.ts`** — this project deliberately has none, since it only
-  reads a third-party API rather than owning its own backend. Compare this
-  to a project where you write your own `GET`/`POST` handlers.
 
 ## Tech used
 
