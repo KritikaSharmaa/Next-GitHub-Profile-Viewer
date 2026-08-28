@@ -1,4 +1,4 @@
-# GitHub Profile Viewer — Next.js + TypeScript (Reference Project)
+# GitHub Profile Viewer — Next.js + TypeScript
 
 Search any GitHub username, view their profile and public repos, click into
 a repo for details. Built to teach concepts your todo app didn't need:
